@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora para profe Bryan</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">  
+</head>
+<style>
+    .body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/shop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+}
+.container {
+    max-width: 900px;
+    height: auto;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000000; 
+}
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745; 
+}
+.info-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff; 
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    height: 100%; 
+}
+.btn-danger {
+    background-color: #535050;
+    border: none;
+}
+.btn-danger:hover {
+    background-color: #535050;
+}
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #6c757d; 
+}
+</style>
+<body>
+    <div class="container">
+        <h1 class="text-center">Calculadora de Descuentos</h1>
+        <div class="row">
+            <div class="col-md-6 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-body">
+                        <form id="discountForm">
+                            <div class="form-group">
+                                <label for="amount">Ingrese el monto de la compra ($):</label>
+                                <input type="number" class="form-control" id="amount" required>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Calcular</button>
+                        </form>
+                        <div class="result text-center" id="result"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex">
+                <div class="info-box flex-fill">
+                    <h5>Condiciones de Descuento</h5>
+                    <p>Si la compra es mayor o igual a 1000$</p>
+                    <p>Se aplica el 15% de descuento</p>
+                    <p>Si la compra es entre 500$ y 999$</p>
+                    <p>Se aplica el 10% de descuento</p>
+                    <p>Si la compra es menor a 500$</p>
+                    <p>Solo se aplica el 5% de descuento</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; Luis Ernesto Escalante Calderón #20200602</p>
+        </div>
+    </div>
+
+    <script src="config.js"> </script>
+</body>
+</html>
